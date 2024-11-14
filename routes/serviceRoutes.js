@@ -1,5 +1,5 @@
 import express from 'express';
-import Service from '../models/services';
+import Service from '../models/services.js';
 const router = express.Router();
 
 router.post('/services', async (req, res) => {
@@ -50,4 +50,4 @@ router.delete('/services/:id', async (req, res) => {
     }
 });
 
-module.exports = router;
+export default router;
