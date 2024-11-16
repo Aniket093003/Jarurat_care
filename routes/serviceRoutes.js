@@ -1,7 +1,6 @@
 import express from 'express';
 import Service from '../models/services.js';
 const router = express.Router();
-nn
 router.post('/services', async (req, res) => {
     try {
         const { name, description, price } = req.body;
